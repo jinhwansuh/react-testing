@@ -32,3 +32,17 @@ Take the longest as they cover the most amount of code
 
 Have a cost implication as yo interact with real APIs that may charge based on the number of requests
 
+## TDD(Test Driven Development)
+TDD is a software development precess where you write tests before writing the software code
+
+Once the tests have been written, you then write the code to ensure the tests pass
+
+1. Create tests that verify the functionality of a specific feature
+2. Write software code that will run the tests successfully when re-executed
+3. Refactor the code for optimization while ensuring the tests continue to pass 
+
+## function
+
+### test
+test(name, fn, timeout)
+
