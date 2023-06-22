@@ -83,3 +83,24 @@ how many of the functions defined have been called and finally
 
 how many of lines of source code have been tested
 
+## Assertions
+
+When writing tests, we often need to check that values meet certain conditions
+
+Assertions decide if a test passes or fails
+
+## expect
+
+expect(value)
+
+The argument should be the value that your code produces
+
+Typically, you will use expect along with a 'matcher' function to assert something about a value
+
+[jest matchers Link](https://jestjs.io/docs/using-matchers)
+
+[jest Dom matchers Link](https://github.com/testing-library/jest-dom)
+
+
+
+
