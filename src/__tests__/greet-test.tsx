@@ -4,7 +4,7 @@
  */
 
 import { render, screen } from '@testing-library/react';
-import Greet from '.';
+import Greet from '../components/Greet';
 
 describe('Greet', () => {
   test('renders correctly', () => {

@@ -7,13 +7,14 @@ import { render, screen } from '@testing-library/react';
 import Greet from '.';
 
 describe('Greet', () => {
-  test('renders correctly', () => {
+  // only fip, skip xit
+  it('renders correctly', () => {
     render(<Greet />);
     const textElement = screen.getByText('Hello');
     expect(textElement).toBeInTheDocument();
   });
 
-  test('renders with a name', () => {
+  it('renders with a name', () => {
     render(<Greet name='jin' />);
     const textElement = screen.getByText('Hello jin');
     expect(textElement).toBeInTheDocument();
