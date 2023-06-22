@@ -3,7 +3,7 @@ type Props = {
 };
 
 const Greet = ({ name }: Props) => {
-  return <div>Hello {name}</div>;
+  return <div>Hello {name ? name : 'Guests'}</div>;
 };
 
 export default Greet;

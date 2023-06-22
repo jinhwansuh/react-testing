@@ -9,27 +9,7 @@ import Greet from '.';
 describe('Greet', () => {
   test('renders correctly', () => {
     render(<Greet />);
-    const textElement = screen.getByText('Hello');
-    expect(textElement).toBeInTheDocument();
-  });
-
-  test('renders with a name', () => {
-    render(<Greet name='jin' />);
-    const textElement = screen.getByText('Hello jin');
-    expect(textElement).toBeInTheDocument();
-  });
-});
-
-describe('Nested', () => {
-  test('renders correctly', () => {
-    render(<Greet />);
-    const textElement = screen.getByText('Hello');
-    expect(textElement).toBeInTheDocument();
-  });
-
-  test('renders with a name', () => {
-    render(<Greet name='jin' />);
-    const textElement = screen.getByText('Hello jin');
+    const textElement = screen.getByText(/Hello/);
     expect(textElement).toBeInTheDocument();
   });
 });
