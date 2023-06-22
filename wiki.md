@@ -46,10 +46,20 @@ Once the tests have been written, you then write the code to ensure the tests pa
 ### test
 test(name, fn, timeout)
 
+### describe
+describe(name, fn)
 
 ## Jest Watch Mode
 Watch mode is an option that we can pass to Jest asking to watch files that have changed since the last commit and execute tests related only to those changed files
 
 An optimization designed to make your tests run fast regardless of how many tests you have
 
+
+## Filename Conventions
+
+Files with .test.js or .test.tsx suffix
+
+Files with .spec.js or .spec.tsx suffix
+
+Files with .js or .tsx suffix in __tests__ folders
 
