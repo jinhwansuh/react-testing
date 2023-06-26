@@ -114,3 +114,37 @@ Typically, you will use expect along with a 'matcher' function to assert somethi
 - Third party code
 - Code that is not important from a user point of view
 
+## Generally test
+Every test we write generally involves the following basic steps
+
+1. Render the component
+2. Find and element rendered by the component
+3. Assert against the element found in step 2 which will pass or fail the test
+
+To render the component, we use the render method from RTL
+
+For assertion, we use expect passing in a value and combine it with a matcher function from jest or jest-dom
+
+## RTL Queries
+
+Queries are the methods that Testing Library provides to find elements on the page
+
+To find a single element on the page, we have
+
+- getBy..
+- queryBy..
+- findBy..
+
+To find multiple elements on the page, we have
+
+- getAllBy..
+- queryAllBy..
+- findAllBy..
+
+The suffix can be one of Role, LabelText, PlaceHolderText, Text, DisplayValue, AltText, Title and finally TestId
+
+
+## getBy... queries
+
+getBy.. class of queries return the matching node for a query, and throw a descriptive error if no elements match or if more than one match is found
+
